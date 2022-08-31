@@ -1,0 +1,565 @@
+<section id="online-quote">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div align="center">
+                <div class="main_title text-center wow flipInX">
+                    <h3>Premium Construction Package</h3>
+                </div>
+
+                <div class="costprice wow flipInY">We Charge &nbsp; <span><!-- <small><strike>Rs.1950/-</strike></small> --> Rs.2250/-</span> &nbsp; per sqft</div>
+            </div>
+
+
+            <!-- <div class="col-md-4">
+                <div align="center">
+                    <img src="images/15thanniv.png" alt="" class="img-responsive" data-pagespeed-url-hash="2089016658" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+            </div> -->
+            <div class="clearfix"></div>
+
+            <div class="col-md-12">
+                
+
+                <div class="annivoffer">                   
+                    <div class="offerbox"><span class="offbg1">Book in August & Get</span><span class="offbg2">Rs.<big>150</big>/<small>sqft OFF</small></span></div>
+                </div>
+
+                <div class="main_title text-center">
+                    <h4>(Architecture Designs <big>+</big> Turnkey Construction)</h4>
+                    <h5>We have given below the informative detail in a simple way where you can arrive the construction quotation for your house by your own</h5>
+                </div>
+
+                <div class="main_title text-center">
+                    <h3>Online Quotation</h3>
+                    <p>You can arrive your Construction estimate here</p>
+                </div>
+
+                <div class="table-responsive dview wow slideInLeft">
+                    <table class="table table-bordered">
+                        <tr class="active">
+                            <th>S.No</th>
+                            <th>Work</th>
+                            <th colspan="3">Area</th>
+                            <th>Unit</th>
+                            <th>Rate</th>
+                            <th>Cost</th>
+                        </tr>
+
+                        <tr>
+                            <td align="center">1</td>
+                            <td>Premium Construction Package : @ 2250/Sqft <br><small>(Enter the total required Built up Area All floors including Headroom)</small></td>
+                            <td colspan="3"><input type="text" name="cost1" id="cost1" onkeyup="CalculateCost()" placeholder="Area in sqft" class="form-control"></td>
+                            <td align="center">sqft</td>
+                            <td align="right">Rs.2250</td>
+                            <td align="right">Rs. <span id="price1">0</span></td>
+                        </tr>
+
+                        <tr>
+                            <td align="center">2</td>
+                            <td>Size of RCC Water Sump</td>
+                            <td style="width:100px"><input type="text" name="cost21" id="cost21" onkeyup="CalculateCost()" placeholder="Length" class="form-control"></td>
+                            <td style="width:100px"><input type="text" name="cost22" id="cost22" onkeyup="CalculateCost()" placeholder="width" class="form-control"></td>
+                            <td style="width:100px"><input type="text" name="cost23" id="cost23" onkeyup="CalculateCost()" placeholder="Depth" class="form-control"></td>
+                            <td align="center"><span id="rccsump"></span> ltr</td>
+                            <td align="right">Rs.18</td>
+                            <td align="right" style="width:150px">Rs. <span id="price2">0</span></td>
+                        </tr>
+
+                        <tr>
+                            <td align="center">3</td>
+                            <td>Size of Septic Tank</td>
+                            <td><input type="text" name="cost31" id="cost31" onkeyup="CalculateCost()" placeholder="Length" class="form-control"></td>
+                            <td><input type="text" name="cost32" id="cost32" onkeyup="CalculateCost()" placeholder="width" class="form-control"></td>
+                            <td><input type="text" name="cost33" id="cost33" onkeyup="CalculateCost()" placeholder="Depth" class="form-control"></td>
+                            <td align="center"><span id="stank"></span> ltr</td>
+                            <td align="right">Rs.18</td>
+                            <td align="right">Rs. <span id="price3">0</span></td>
+                        </tr>
+
+                        <tr>
+                            <td align="center">4</td>
+                            <td>Plain Compound Wall</td>
+                            <td>&nbsp;</td>
+                            <td><input type="text" name="cost41" id="cost41" onkeyup="CalculateCost()" placeholder="Length" class="form-control"></td>
+                            <td><input type="text" name="cost42" id="cost42" onkeyup="CalculateCost()" placeholder="Height" class="form-control"></td>
+                            <td align="center">sqft</td>
+                            <td align="right">Rs.425</td>
+                            <td align="right">Rs. <span id="price4">0</span></td>
+                        </tr>
+
+                        <tr class="active">
+                            <td colspan="7" align="right"><b>Total Construction Cost</b></td>
+                            <td align="right"><b>Rs. <span id="finalcost">0</span></b></td>
+                        </tr>
+                    </table>
+
+                    <p><small><b>Note :</b> * 1 cft = 28.317 ltr</small></p>
+                </div>
+
+
+                <div class="mybox mview">
+                    <div class="form-group">
+                        <p>Construction Package <br><small>Enter the Total Construction Area including Headroom (sqft)</small></p>
+                        <p><input type="text" name="mcost1" id="mcost1" onkeyup="MCalculateCost()" placeholder="Area in sqft" class="form-control"></p>
+                        <p><small>(Rs.2250 per sqft)</small> &nbsp; &nbsp; Rs. <span id="mprice1">0</span></p>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Size of RCC Water Sump (ltr)</p>
+                        <div class="col-xs-4 padleft0">
+                            <p><input type="text" name="mcost21" id="mcost21" onkeyup="MCalculateCost()" placeholder="Length" class="form-control"></p>
+                        </div>
+                        <div class="col-xs-4 padleft0">
+                            <p><input type="text" name="mcost22" id="mcost22" onkeyup="MCalculateCost()" placeholder="Width" class="form-control"></p>
+                        </div>
+                        <div class="col-xs-4 padleft0">
+                            <p><input type="text" name="mcost23" id="mcost23" onkeyup="MCalculateCost()" placeholder="Depth" class="form-control"></p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <p><small>(Rs.18 per ltr)</small> &nbsp; &nbsp; Rs. <span id="mprice2">0</span><span id="mrccsump"></span></p>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Size of Septic Tank (ltr)</p>
+                        <div class="col-xs-4 padleft0">
+                            <p><input type="text" name="mcost31" id="mcost31" onkeyup="MCalculateCost()" placeholder="Length" class="form-control"></p>
+                        </div>
+                        <div class="col-xs-4 padleft0">
+                            <p><input type="text" name="mcost32" id="mcost32" onkeyup="MCalculateCost()" placeholder="Width" class="form-control"></p>
+                        </div>
+                        <div class="col-xs-4 padleft0">
+                            <p><input type="text" name="mcost33" id="mcost33" onkeyup="MCalculateCost()" placeholder="Depth" class="form-control"></p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <p><small>(Rs.18 per ltr)</small> &nbsp; &nbsp; Rs. <span id="mprice3">0</span><span id="mstank"></span></p>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Plain of Compound Wall (sqft)</p>
+                        <div class="col-xs-6 padleft0">
+                            <p><input type="text" name="mcost41" id="mcost41" onkeyup="MCalculateCost()" placeholder="Length" class="form-control"></p>
+                        </div>
+                        <div class="col-xs-6 padleft0">
+                            <p><input type="text" name="mcost42" id="mcost42" onkeyup="MCalculateCost()" placeholder="Width" class="form-control"></p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <p><small>(Rs.425 per sqft)</small> &nbsp; &nbsp; Rs. <span id="mprice4">0</span></p>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-6"><b>Total Cost</b></div>
+                        <div class="col-xs-6"><b>Rs. <span id="mfinalcost">0</span></b></div>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <p><br><small><b>Note :</b> * 1 cft = 28.317 ltr</small></p>
+                </div>
+
+
+                <p>&nbsp;</p>
+
+                <div class="panel panel-primary wow bounceInUp">
+                    <div class="panel-body"><b>What's not Included in Package :</b> Borewell, Interior Works, Special Designs in Elevation, Sump, Septic Tank and Compound wall.</div>
+                </div>
+
+
+                <p>&nbsp;</p>
+
+
+                <div class="panel panel-default wow slideInRight" style="border-color:#005bbf">
+                    <div class="panel-heading" style="border-color:#005bbf">
+                        <h4>Quality and Brand of material used in the above mentioned construction package</h4>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="col-xs-3 pad0">
+                            <!-- required for floating -->
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs tabs-left">
+                                <li class="active"><a id="m1" href="#tab1" data-toggle="tab">Flooring</a></li>
+                                <li><a id="m2" href="#tab2" data-toggle="tab">Staircase Flooring</a></li>
+                                <li><a id="m3" href="#tab3" data-toggle="tab">Sanitary Ware & Fittings</a></li>
+                                <li><a id="m4" href="#tab4" data-toggle="tab">Painting</a></li>
+                                <li><a id="m5" href="#tab5" data-toggle="tab">Balcony & Staircase Railing</a></li>
+                                <li><a id="m6" href="#tab6" data-toggle="tab">Windows & Doors</a></li>
+                                <li><a id="m7" href="#tab7" data-toggle="tab">Electrical & Switches</a></li>
+                                <li><a id="m8" href="#tab8" data-toggle="tab">Plumbing</a></li>
+                                <li><a id="m9" href="#tab9" data-toggle="tab">Cement</a></li>
+                                <li><a id="m10" href="#tab10" data-toggle="tab">Blocks & Bricks</a></li>
+                                <li><a id="m11" href="#tab11" data-toggle="tab">Sand</a></li>
+                                <li><a id="m12" href="#tab12" data-toggle="tab">Steel</a></li>
+                                <li><a id="m13" href="#tab13" data-toggle="tab">Readymix Concrete</a></li>
+                                <!-- <li><a id="m14" href="#tab14" data-toggle="tab">Windows Grill</a></li> -->
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-9">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab1">
+                                    <h3>Flooring 
+                                        <a href="javascript://" onclick="GoNext(2)" class="btn btn-primary yellow pull-right">NEXT</a>
+                                        <a href="javascript://" onclick="GoNext(13)" class="btn btn-primary yellow pull-right mr10">PREV</a>
+                                    </h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <div class="col-md-6" align="center">
+                                        <img src="images/flooring1.webp" alt="Residential Architects in Chennai" class="img-responsive" data-pagespeed-url-hash="370276018" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p><b>Floor Tile For Living, Dining, Kitchen & Rooms</b></p>
+                                        <p>Size : 4' x 2' or 3' x 3' High Gloss Digital Vitrified Tiles</p>
+                                    </div>
+
+                                    <div class="col-md-6" align="center">
+                                        <img src="images/flooring2.webp" alt="Civil Contractor in Chennai" class="img-responsive" data-pagespeed-url-hash="295060005" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p><b>Bathroom Tiles</b></p>
+                                        <p>Wall Tile : Size 4' x 2' Digital Vitrified <br>Floor Tile : Size 2' x 2' Anti Skid Vitrified</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="tab-pane" id="tab2">
+                                    <h3>Staircase Flooring 
+                                        <a href="javascript://" onclick="GoNext(3)" class="btn btn-primary yellow pull-right">NEXT</a>
+                                        <a href="javascript://" onclick="GoNext(1)" class="btn btn-primary yellow pull-right mr10">PREV</a>
+                                    </h3>
+                                    <br>
+
+                                    <div class="col-md-6" align="center">
+                                        <img src="images/black-granite.jpg" alt="Top 10 Construction Companies in Chennai" class="img-responsive" data-pagespeed-url-hash="3765123252" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p><b>Black Granite</b></p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="tab-pane" id="tab3">
+                                    <h3>Sanitary Ware & Fittings 
+                                        <a href="javascript://" onclick="GoNext(4)" class="btn btn-primary yellow pull-right">NEXT</a>
+                                        <a href="javascript://" onclick="GoNext(2)" class="btn btn-primary yellow pull-right mr10">PREV</a>
+                                    </h3>
+                                    <br>
+
+                                    <div class="col-md-6" align="center">
+                                        <img src="images/sanitary-ware.webp" alt="Top 10 Construction Companies in Chennai" class="img-responsive" data-pagespeed-url-hash="3499709488" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p><b>Wall Mounted EWCs</b></p>
+                                        <p>Parryware / Hindware / Cera</p>
+                                    </div>
+
+                                    <div class="col-md-6" align="center">
+                                        <img src="images/sanitary-fittings.webp" alt="Best Architects in Chennai" class="img-responsive" data-pagespeed-url-hash="2927357825" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p><b>Concealed Diverter, Overhead Shower & Bath Spout</b></p>
+                                        <p>Parryware / Hindware</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="tab-pane" id="tab4">
+                                    <h3>Painting 
+                                        <a href="javascript://" onclick="GoNext(5)" class="btn btn-primary yellow pull-right">NEXT</a>
+                                        <a href="javascript://" onclick="GoNext(3)" class="btn btn-primary yellow pull-right mr10">PREV</a>
+                                    </h3>
+                                    <br>
+
+
+                                    <h4><b><u>Interior Walls :</u></b></h4>
+
+                                    <div class="col-md-6" align="center">
+                                        <img src="images/nerolac.jpg" alt="Top 10 Construction Companies in Chennai" class="img-responsive" data-pagespeed-url-hash="1660323998" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p><b>Full Putty - Nerolac</b></p>
+                                    </div>
+
+                                    <div class="col-md-6" align="center">
+                                        <img src="images/nippon-paint-1.jpg" alt="Best Architects in Chennai" class="img-responsive" data-pagespeed-url-hash="1496075017" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p><b>Interior Walls - Nippon Matex Gold</b></p>
+                                    </div>
+
+                                    <div>&nbsp;</div>
+
+                                    <hr>
+
+                                    <h4><b><u>Exterior Walls :</u></b></h4>
+
+                                    <div class="col-md-6" align="center">
+                                        <img src="images/nerolac.jpg" alt="Top 10 Construction Companies in Chennai" class="img-responsive" data-pagespeed-url-hash="1660323998" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p><b>Elevation Putty - Nerolac</b></p>
+                                    </div>
+
+                                    <div class="col-md-6" align="center">
+                                        <img src="images/nippon-paint.jpg" alt="Best Architects in Chennai" class="img-responsive" data-pagespeed-url-hash="24845729" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p><b>Exterior Walls - Nippon Weatherbond Advance</b></p>
+
+
+                                        <p class="text-left"><b>Nippon Weatherbond Advance Features :</b></p>
+                                        <ul class="text-left" style="list-style:decimal;line-height: 25px;color: #000;">
+                                            <li>Dirt Resistance</li>
+                                            <li>Peeling Resistance</li>
+                                            <li>Anti-Algae</li>
+                                            <li>Anti-Fungus</li>
+                                            <li>Alkali Resistance</li>
+                                            <li>Chemical Resistance</li>
+                                            <li>Non-Toxic</li>
+                                            <li>Anti-Carbonation</li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div>&nbsp;</div>
+
+                                <div class="tab-pane" id="tab5">
+                                    <h3>Balcony & Staircase Railing 
+                                        <a href="javascript://" onclick="GoNext(6)" class="btn btn-primary yellow pull-right">NEXT</a>
+                                        <a href="javascript://" onclick="GoNext(4)" class="btn btn-primary yellow pull-right mr10">PREV</a>
+                                    </h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <div class="col-md-6">
+                                        <div align="center">
+                                            <img src="images/Stainless-Steel-Railing-for-Steps.webp" alt="Top 10 Architects in Chennai" class="img-responsive" data-pagespeed-url-hash="90299296" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                            <br>
+                                            <p>SS 304 Grade steel railing for staircases</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div align="center">
+                                            <img src="images/SS-Railing-for-Balcony.webp" alt="Best Architecture Company in Chennai" class="img-responsive" data-pagespeed-url-hash="1037646437" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                            <br>
+                                            <p>10mm Toughened glass SS railings for balconies.</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="tab-pane" id="tab6">
+                                    <h3>Windows & Doors 
+                                        <a href="javascript://" onclick="GoNext(7)" class="btn btn-primary yellow pull-right">NEXT</a>
+                                        <a href="javascript://" onclick="GoNext(5)" class="btn btn-primary yellow pull-right mr10">PREV</a>
+                                    </h3>
+
+                                    <div class="col-md-3" align="center">
+                                        <img src="images/windows.webp" alt="Top Architect Company in Chennai" class="img-responsive" data-pagespeed-url-hash="418997934" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <p>&nbsp;</p><br>
+
+                                        <p>Non corrosive UPVC sliding windows for all windows and french doors.</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                    <p>&nbsp;</p>
+
+                                    <div class="col-md-3" align="center">
+                                        <img src="images/doors.webp" alt="Architecture Firms in Chennai" class="img-responsive" data-pagespeed-url-hash="196203016" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <p>&nbsp;</p><br>
+
+                                        <p>1st Quality Teak Door for Main Door</p>
+                                        <p>2nd Quality Teak Wood Frames for all Doors</p>
+                                        <p>Flush Doors and Membrane Doors for all rooms and bathrooms</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="tab-pane" id="tab7">
+                                    <h3>Electrical & Switches  
+                                        <a href="javascript://" onclick="GoNext(8)" class="btn btn-primary yellow pull-right">NEXT</a>
+                                        <a href="javascript://" onclick="GoNext(6)" class="btn btn-primary yellow pull-right mr10">PREV</a>
+                                    </h3>
+                                    <br>
+
+                                    <div class="col-md-6" align="center">
+                                        <img src="images/polycab-wires.webp" class="img-responsive" data-pagespeed-url-hash="1011440672" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p>Orbit / Kundan brand wires</p>
+                                    </div>
+
+                                    <div class="col-md-6" align="center">
+                                        <img src="images/roma-switches.webp" alt="Top 10 Construction Companies in Chennai" class="img-responsive" data-pagespeed-url-hash="1821931775" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p>Roma / Legrand / Fybros brand designer switches</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="tab-pane" id="tab8">
+                                    <h3>Plumbing 
+                                        <a href="javascript://" onclick="GoNext(9)" class="btn btn-primary yellow pull-right">NEXT</a>
+                                        <a href="javascript://" onclick="GoNext(7)" class="btn btn-primary yellow pull-right mr10">PREV</a>
+                                    </h3>
+                                    <br>
+
+                                    <div class="col-md-6" align="center">
+                                        <img src="images/plumbing1.webp" alt="Residential Builders in Chennai" class="img-responsive" data-pagespeed-url-hash="2372840784" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p>Branded CPVC Heat Resistant Pipes used for concealed plumbing</p>
+                                    </div>
+
+                                    <div class="col-md-6" align="center">
+                                        <img src="images/plumbing2.webp" alt="Residential Constructors in Chenai" class="img-responsive" data-pagespeed-url-hash="2297624771" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p>Branded PVC Pipes used for outer drain and water line pipes</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="tab-pane" id="tab9">
+                                    <h3>Cement 
+                                        <a href="javascript://" onclick="GoNext(10)" class="btn btn-primary yellow pull-right">NEXT</a>
+                                        <a href="javascript://" onclick="GoNext(8)" class="btn btn-primary yellow pull-right mr10">PREV</a>
+                                    </h3>
+
+                                    <div class="col-md-4" align="center">
+                                        <img src="images/ramco-cement.webp" alt="Civil Contractors in Chennai" class="responsive-img" data-pagespeed-url-hash="2945558100" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p align="center">Ramco PPC Cement</p>
+                                    </div>
+
+                                    <div class="col-md-4" align="center">
+                                        <img src="images/dalmia-cement.webp" alt="Civil Contractors in Chennai" class="responsive-img" data-pagespeed-url-hash="626828790" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p align="center">Dalmia PPC Cement</p>
+                                    </div>
+
+                                    <div class="col-md-4" align="center">
+                                        <img src="images/ultratech-cement.webp" alt="Civil Contractors in Chennai" class="responsive-img" data-pagespeed-url-hash="3279049016" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p align="center">UltraTech PPC Cement</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-pane" id="tab10">
+                                    <h3>Blocks & Bricks 
+                                        <a href="javascript://" onclick="GoNext(11)" class="btn btn-primary yellow pull-right">NEXT</a>
+                                        <a href="javascript://" onclick="GoNext(9)" class="btn btn-primary yellow pull-right mr10">PREV</a>
+                                    </h3>
+
+                                    <div class="col-md-6">
+                                        <div align="center">
+                                            <img src="images/aacblocks.webp" alt="Best Construction Company in Chennai" class="img-responsive" data-pagespeed-url-hash="1758868068" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                        </div>
+                                        <br>
+
+                                        <p align="center">AAC Blocks</p>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div align="center">
+                                            <img src="images/bricks.webp" alt="Best Construction Company in Chennai" class="img-responsive" data-pagespeed-url-hash="982516201" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                        </div>
+                                        <br>
+
+                                        <p align="center">Bricks</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="tab-pane" id="tab11">
+                                    <h3>Sand 
+                                        <a href="javascript://" onclick="GoNext(12)" class="btn btn-primary yellow pull-right">NEXT</a>
+                                        <a href="javascript://" onclick="GoNext(10)" class="btn btn-primary yellow pull-right mr10">PREV</a>
+                                    </h3>
+                                    <br>
+
+                                    <div class="col-md-6" align="center">
+                                        <img src="images/msand-rough.webp" alt="best residential architects in Chennai" class="img-responsive" data-pagespeed-url-hash="2302113988" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p>Double water washed rough M-Sand used for masonry and concrete work.</p>
+                                    </div>
+
+                                    <div class="col-md-6" align="center">
+                                        <img src="images/msand-nice.webp" alt="top residential architects in Chennai" class="img-responsive" data-pagespeed-url-hash="4060333546" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p>Double water washed nice M-Sand used for plastering.</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="tab-pane" id="tab12">
+                                    <h3>Steel 
+                                        <a href="javascript://" onclick="GoNext(13)" class="btn btn-primary yellow pull-right">NEXT</a>
+                                        <a href="javascript://" onclick="GoNext(11)" class="btn btn-primary yellow pull-right mr10">PREV</a>
+                                    </h3>
+
+                                    <div align="center">
+                                        <img src="images/TMT-Steel-Bars.webp" alt="best construction company in Chennai" class="img-responsive" data-pagespeed-url-hash="2381159799" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                        <br>
+                                        <p>Branded Fe 550 D High Tensioned ISO Certified Arun TMT / Kamachi TMT Bars Used For All RCC Works</p>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="tab13">
+                                    <h3>Readymix Concrete 
+                                        <a href="javascript://" onclick="GoNext(1)" class="btn btn-primary yellow pull-right">NEXT</a>
+                                        <a href="javascript://" onclick="GoNext(12)" class="btn btn-primary yellow pull-right mr10">PREV</a>
+                                    </h3>
+
+                                    <div align="center">
+                                        <img src="images/RDC-Concrete.webp" alt="Top Residential Builders in Chennai" class="img-responsive" data-pagespeed-url-hash="4216434814" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                    </div>
+
+                                    <br>
+                                    <p><b>Ready Mix :</b></p>
+                                    <p>M20 Grade Concrete used for Roof Slabs & RCC Structures</p>
+                                    <p>M10 Grade Concrete used for PCC</p><br>
+
+                                    <p><b>Brand :</b> RDC / VRMX / ACC Concrete</p>
+                                </div>
+
+                                <!-- <div class="tab-pane" id="tab13">
+                                    <h3>Windows Grill 
+                                        <a href="javascript://" onclick="GoNext(1)" class="btn btn-primary yellow pull-right">NEXT</a>
+                                        <a href="javascript://" onclick="GoNext(12)" class="btn btn-primary yellow pull-right mr10">PREV</a>
+                                    </h3>
+
+                                    <div align="center">
+                                        <img src="images/windows-grill.webp" alt="Leading Architects in Chennai" class="img-responsive">
+
+                                        <br>
+                                        <p>MS Square Bar safety Grill used for all windows</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
